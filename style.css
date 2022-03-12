@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+/* style the upper control bar */
+
+.head {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 10%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgrey;
+ 
+}
+
+.head h2 {
+    font-weight: bold;
+}
+
+
+.fa-power-off {
+    color: red;
+}
+
+.fa-power-off:hover, .fa-magnifying-glass:hover {
+    color: purple;
+}
+
+/* style the image */
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+}
+
+.middle h2 {
+    margin: 1rem;
+}
+  
+.song {
+    background-image: url(./assets/track-image.jpeg);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px 5px grey;
+   
+}
+
+/* style the lower control bar */
+
+.down {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40%;
+    background-color: lightgrey;
+}
+
+.down h2 {
+    text-align: center;
+    color: grey;
+    margin: 1rem;
+}
+
+/* style progress bar for chrome */
+
+.down progress {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 50%;
+    height: 5%;
+    margin: 1rem;
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+
+progress::-webkit-progress-bar {
+    background: white;
+    border-radius: 10px; 
+}
+
+progress::-webkit-progress-value {
+    background: rgb(183, 143, 221);
+  
+}
+
+/* style progress bar for firefox */
+
+progress {
+    background-color: white;
+    border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+    background-color:rgb(183, 143, 221);
+    border-radius: 10px;}
+
+    /* style the lower control panel */
+
+.control {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    justify-content: space-around;
+    background-color: lightgrey;
+  
+}
+
+.control button {
+    width: 5%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 5px #a2b1c6 ;
+  
+}
+
+.control button:nth-of-type(2) {
+    color: aqua;
+}
+
+.control button:hover {
+    background-color: purple;
+    color: white;
+}
+
+
+.bottombar {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width:30%;
+    height: 3%;
+    border-radius:30px;
+    background-color: lightgrey;
+    margin: 2rem ;
+    
+}
